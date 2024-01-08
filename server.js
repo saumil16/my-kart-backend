@@ -26,9 +26,9 @@ dotenv.config();
 
 Connection(URL);
 
-if(process.env.NODE_ENV === 'production'){
-    app.use(express.static('client/build'))
-}
+// if(process.env.NODE_ENV === 'production'){
+//     app.use(express.static('client/build'))
+// }
 
 app.listen(PORT,()=>console.log(`Server Running successfully on port ${PORT}`));
 
