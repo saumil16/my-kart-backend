@@ -11,9 +11,9 @@ import bodyParser from 'body-parser';
 const Username = process.env.DB_username;
 const Password = process.env.DB_password;
 
-const PORT= process.env.PORT || 8000;
+const PORT= 8000;
 
-const URL = process.env.MONGODB_URL || `mongodb+srv://${Username}:${Password}@mykart-web.ebredwe.mongodb.net/?retryWrites=true&w=majority`;
+const URL = `mongodb+srv://${Username}:${Password}@mykart-web.ebredwe.mongodb.net/?retryWrites=true&w=majority`;
 
 const app = express();
 
